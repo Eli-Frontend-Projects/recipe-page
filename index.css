@@ -1,7 +1,6 @@
 :root {
   --nutmeg: hsl(14, 45%, 36%);
   --dark-raspberry: hsl(332, 51%, 32%);
-
   --white: hsl(0, 0%, 100%);
   --rose-white: hsl(330, 100%, 98%);
   --eggshell: hsl(30, 54%, 90%);
@@ -10,10 +9,52 @@
   --dark-charcoal: hsl(24, 5%, 18%);
 }
 
+h2 {
+    color: var(--nutmeg);
+    font-size: 28px;
+}
+
+#prep-time-header{
+    color: var(--dark-raspberry);
+}
+
+.sec-line{
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.instructions {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    background-color: var(--eggshell);
+    color: var(--Wenge-Brown);
+    margin: 0px;
+}
+
+h1, h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+
+h1 {
+    color: var(--Dark-Charcoal);
+    margin-bottom: 15px;
+    font-size: 42px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
 .main-background{
     margin-left: 0%;
     margin-right: 0%;
-    background-color:white;
+    background-color: var(--white);
+    padding: 20px;
 }
 
 
@@ -26,10 +67,11 @@
         margin-left: 20%;
         margin-right: 20%;
         margin-top: 10%;
+        padding: 20px;
     }
 
     body{
-        background-color: rgb(240, 224, 6);
+      background-color: var(--eggshell);
     }
 }
 
@@ -40,7 +82,7 @@ hr {
 img{max-width: 100%;}
 
 .prep-time-section{
-    background-color:  pink;
+    background-color: var(--rose-white);
     margin-left: 5%;
     margin-right: 5%;
 }
@@ -50,4 +92,32 @@ table {
   font-family: "Outfit", sans-serif;
   width: 90%;
   margin-top: 1rem;
+}
+
+/* Apply border to all table cells */
+td, th {
+  border: none; /* Reset default borders */
+  border-bottom: 1px solid var(--light-grey);
+  font-weight: normal;
+}
+
+th{
+  text-align: left;
+  padding-left: 5%;
+}
+
+td{
+    color: var(--nutmeg);
+}
+
+/* Apply border to the last row only */
+tr:last-child td, tr:last-child th {
+  border-bottom: none; /* Remove bottom line from last row */
+}
+
+
+li{
+  margin: 20px 0;
+  margin-left: 40px;
+  position: relative;
 }
